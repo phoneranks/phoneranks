@@ -69,8 +69,8 @@ header {
       grid-template-rows: -webkit-min-content 1fr;
       grid-template-rows: min-content 1fr;
   text-align: center;
-  -webkit-box-shadow: 0 2px 5px -2px black;
-          box-shadow: 0 2px 5px -2px black;
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
 }
 
 header .logo {
@@ -252,15 +252,22 @@ header .text p {
   grid-gap: 10px;
 }
 
+@media only screen and (min-width: 1200px) {
+  .comparison .tables {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
 .comparison .tables .table {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: min-content 1fr;
       grid-template-columns: -webkit-min-content 1fr;
       grid-template-columns: min-content 1fr;
-  -ms-grid-rows: min-content 1fr;
-      grid-template-rows: -webkit-min-content 1fr;
-      grid-template-rows: min-content 1fr;
+  -ms-grid-rows: min-content min-content 1fr min-content;
+      grid-template-rows: -webkit-min-content -webkit-min-content 1fr -webkit-min-content;
+      grid-template-rows: min-content min-content 1fr min-content;
   margin: 10px;
   -webkit-box-shadow: 2px 2px 5px;
           box-shadow: 2px 2px 5px;
@@ -268,23 +275,13 @@ header .text p {
 }
 
 .comparison .tables .img-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1 / 3;
-  margin: 20px;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  margin: 20px 10px;
 }
 
 .comparison .tables img {
@@ -299,13 +296,13 @@ header .text p {
 
 .comparison .tables h2 {
   font-size: 2rem;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
-  margin: 20px 10px 10px 10px;
+  margin: 10px auto;
 }
 
 .comparison .tables ul {
@@ -313,14 +310,10 @@ header .text p {
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
   -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
+  -ms-grid-row-span: 2;
+  grid-row: 2 / 4;
   list-style: none;
-  margin: 0 0 20px 10px;
-}
-
-.comparison .tables li {
-  border-bottom: 1px dotted black;
+  margin: 10px 0 10px 10px;
 }
 
 .comparison .tables li:nth-child(odd) {
@@ -332,15 +325,79 @@ header .text p {
 }
 
 .comparison .tables li:last-child {
-  font-size: 20px;
+  font-size: 1.5rem;
   color: #792a3b;
+  border-bottom: none;
 }
 
-@media only screen and (min-width: 1200px) {
-  .comparison .tables {
-    width: 60%;
-    margin: 0 auto;
-  }
+.comparison .tables .container-button-website {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3 / 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-left: 0.8px solid #3b3434;
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.9rem;
+  text-align: center;
+  white-space: nowrap;
+  margin-left: 10px;
+  margin-right: 5px;
+  margin-bottom: 10%;
+}
+
+.comparison .tables .button-website {
+  color: black;
+}
+
+.comparison .tables .button-website i {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.comparison .tables .button-discount {
+  display: block;
+  color: black;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  grid-row: 4 / 5;
+  background-color: #b11d36;
+  -webkit-transition: background-color 100ms ease-in-out;
+  transition: background-color 100ms ease-in-out;
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+  padding: 10px;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+.comparison .tables .button-discount:hover {
+  background-color: #eb2f4e;
+}
+
+.comparison .tables .no-discount {
+  cursor: default;
+  pointer-events: none;
+  background-color: #cac7c7;
+}
+
+.comparison .tables .no-discount:hover {
+  background-color: #a5a5a5;
 }
 
 .comparison .load-more {
