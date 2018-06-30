@@ -180,7 +180,7 @@ header .text p {
   grid-column: 2 / 3;
   width: 100%;
   margin-right: 10px;
-  padding: 1.1em;
+  padding: 0.5em;
   border: none;
   font-size: 1.2rem;
   -webkit-box-shadow: 0 0 3px;
@@ -513,9 +513,5 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-footer h1 span {
-  font-family: 'Kaushan Script', cursive;
 }
 /*# sourceMappingURL=styles.css.map */
