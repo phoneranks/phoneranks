@@ -214,11 +214,8 @@ header .text p {
   background-color: #b62b42;
 }
 
-.comparison {
+.container {
   margin-top: 10vh;
-}
-
-.comparison .container {
   margin-bottom: 3em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -235,16 +232,16 @@ header .text p {
           justify-content: center;
 }
 
-.comparison .container h1 {
+.container h1 {
   text-align: center;
 }
 
-.comparison .container p {
+.container p {
   text-align: center;
   margin: 10px 20px 0 10px;
 }
 
-.comparison .tables {
+.tables {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
@@ -253,13 +250,13 @@ header .text p {
 }
 
 @media only screen and (min-width: 1200px) {
-  .comparison .tables {
+  .tables {
     width: 60%;
     margin: 0 auto;
   }
 }
 
-.comparison .tables .table {
+.tables .table {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: min-content 1fr;
@@ -274,7 +271,7 @@ header .text p {
   border-radius: 6px;
 }
 
-.comparison .tables .img-container {
+.tables .img-container {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
@@ -284,17 +281,17 @@ header .text p {
   margin: 20px 10px;
 }
 
-.comparison .tables img {
+.tables img {
   -o-object-fit: contain;
      object-fit: contain;
   height: 200px;
 }
 
-.comparison .tables .rounded {
+.tables .rounded {
   border-radius: 10px;
 }
 
-.comparison .tables h2 {
+.tables h2 {
   font-size: 2rem;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -305,7 +302,7 @@ header .text p {
   margin: 10px auto;
 }
 
-.comparison .tables ul {
+.tables ul {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
@@ -316,21 +313,21 @@ header .text p {
   margin: 10px 0 10px 10px;
 }
 
-.comparison .tables li:nth-child(odd) {
+.tables li:nth-child(odd) {
   color: #00aeff;
 }
 
-.comparison .tables li:first-child {
+.tables li:first-child {
   font-size: 18px;
 }
 
-.comparison .tables li:last-child {
+.tables li:last-child {
   font-size: 1.5rem;
   color: #792a3b;
   border-bottom: none;
 }
 
-.comparison .tables .container-button-website {
+.tables .container-button-website {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
@@ -357,16 +354,16 @@ header .text p {
   margin-bottom: 10%;
 }
 
-.comparison .tables .button-website {
+.tables .button-website {
   color: black;
 }
 
-.comparison .tables .button-website i {
+.tables .button-website i {
   display: block;
   margin-bottom: 4px;
 }
 
-.comparison .tables .button-discount {
+.tables .button-discount {
   display: block;
   color: black;
   -ms-grid-column: 1;
@@ -387,14 +384,14 @@ header .text p {
 }
 
 @media only screen and (min-width: 360px) and (max-width: 649px) {
-  .comparison .tables .container-button-website {
+  .tables .container-button-website {
     -ms-grid-row: 4;
     -ms-grid-row-span: 1;
     grid-row: 4 / 5;
     margin: 0;
     border: none;
   }
-  .comparison .tables .button-discount {
+  .tables .button-discount {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2 / 3;
@@ -404,21 +401,21 @@ header .text p {
   }
 }
 
-.comparison .tables .button-discount:hover {
+.tables .button-discount:hover {
   background-color: #eb2f4e;
 }
 
-.comparison .tables .no-discount {
+.tables .no-discount {
   cursor: default;
   pointer-events: none;
   background-color: #cac7c7;
 }
 
-.comparison .tables .no-discount:hover {
+.tables .no-discount:hover {
   background-color: #a5a5a5;
 }
 
-.comparison .load-more {
+.load-more {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -432,14 +429,14 @@ header .text p {
   width: 100%;
 }
 
-.comparison .load-more a {
+.load-more a {
   position: relative;
   color: white;
   background-color: #eb0028;
   padding: 12px 20px;
 }
 
-.comparison .load-more a::after {
+.load-more a::after {
   content: '→';
   position: absolute;
   top: 0;
@@ -469,7 +466,7 @@ header .text p {
   padding-bottom: 5px;
 }
 
-.comparison .load-more a:hover::after {
+.load-more a:hover::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   -webkit-transition: color 150ms ease-in-out, -webkit-transform 250ms ease-in-out 150ms;
